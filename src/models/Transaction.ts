@@ -20,7 +20,7 @@ class Transaction {
   @Column()
   type: 'income' | 'outcome';
 
-  @Column()
+  @Column({ type: 'integer' })
   value: number;
 
   @Column()

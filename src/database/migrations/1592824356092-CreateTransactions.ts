@@ -17,6 +17,7 @@ export default class CreateTransactions1592824356092
             type: 'varchar',
             isPrimary: true,
             generationStrategy: 'uuid',
+            default: 'uuid_generate_v4()',
           },
           {
             name: 'title',
@@ -28,7 +29,7 @@ export default class CreateTransactions1592824356092
           },
           {
             name: 'value',
-            type: 'decimal',
+            type: 'integer',
           },
           {
             name: 'category_id',
