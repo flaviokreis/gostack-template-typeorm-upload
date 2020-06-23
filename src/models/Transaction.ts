@@ -18,7 +18,7 @@ class Transaction {
   title: string;
 
   @Column()
-  type: 'income' | 'outcome';
+  type: string;
 
   @Column({ type: 'integer' })
   value: number;
